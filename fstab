@@ -1,0 +1,17 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Fri Aug 16 18:36:10 2013
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/vg_slab-lv_root /                       ext4    defaults,x-systemd.device-timeout=0 1 1
+UUID=5f555bf0-4b9c-432d-8540-840206c9bc16 /boot                   ext4    defaults        1 2
+/dev/mapper/vg_slab-lv_home /home                   ext4    defaults,x-systemd.device-timeout=0 1 2
+/dev/mapper/vg_slab-lv_swap swap                    swap    defaults,x-systemd.device-timeout=0 0 0
+//audio.local/storage$      /mnt/storage            cifs    guest 0 0
+//audio.local/backup$       /mnt/backup             cifs    guest 0 0
+//audio.local/staging$      /mnt/staging            cifs    guest 0 0
+//audio.local/music$        /mnt/music              cifs    guest 0 0
+/dev/disk/by-uuid/13ee53e4-e42a-4d09-918e-53caac048ede /data ext4 defaults 0 0

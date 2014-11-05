@@ -1,0 +1,14 @@
+[jamielinux-tor]
+name=Tor and Tor Browser repository for Fedora
+baseurl=http://repo.jamielinux.com/tor/fedora-$releasever/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-jamielinux
+
+[jamielinux-tor-source]
+name=Tor and Tor Browser repository for Fedora - Source
+baseurl=http://repo.jamielinux.com/tor/fedora-$releasever/SRPMS/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-jamielinux
+

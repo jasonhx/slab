@@ -1,0 +1,7 @@
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rd.md=0 rd.dm=0 rd.lvm.lv=vg_slab/lv_swap vconsole.keymap=us $([ -x /usr/sbin/rhcrashkernel-param ] && /usr/sbin/rhcrashkernel-param || :) rd.luks.uuid=luks-4ecb99d8-0f14-4d31-a74b-e4c71c475845 rd.lvm.lv=vg_slab/lv_root vconsole.font=latarcyrheb-sun16 rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"
